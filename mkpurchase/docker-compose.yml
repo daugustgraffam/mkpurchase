@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+   ecom-services:
+    build: ./mkpurch
+#    command: python app.py
+    volumes: 
+     - .:/mkpurch
+    ports: 
+     - 8080:80
